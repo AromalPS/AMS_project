@@ -43,14 +43,14 @@
                             <label for="subject" class="col-md-4 col-form-label text-md-right">Subject</label>
 
                             <div class="col-md-6">
-                                <select id="subject" type="text" class="form-control @error('subject') is-invalid @enderror" name="class" value="{{ old('subject') }}" required autocomplete="subject">
+                                <select id="subject" type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" value="{{ old('subject') }}" required autocomplete="subject">
                                 <option value="Maths" selected>Maths</option>
                                 <option value="Chemistry">Chemistry</option>
                                 <option value="Physics">Physics</option>
                                 <option value="Graphics">Graphics</option>
                                 </select>
 
-                                @error('class')
+                                @error('subject')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

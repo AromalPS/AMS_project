@@ -10,7 +10,7 @@ class TeacherLoginController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('guest:teacher');
+        $this->middleware('guest:teacher')->except('logout');
     }
 
     public function showLoginForm()
@@ -36,5 +36,11 @@ class TeacherLoginController extends Controller
 
         //  If unsuccessful redirect back to login page with email and remember fields
         return redirect()->back()->withlogin($request->only('email', 'remember'));
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::guard('teacher')->logout();
+        Return redirect('/');
     }
 }

@@ -20,10 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/user/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 
 Route::prefix('admin')->group(function (){
     // Dashboard routes
-    Route::get('/', 'AdminContoller@index')->name('admin.dashboard');
+    Route::get('/', 'AdminController@index')->name('admin.dashboard');
 
     // Login routes
     Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
@@ -39,7 +40,7 @@ Route::prefix('admin')->group(function (){
 
 Route::prefix('teacher')->group(function (){
     // Dashboard routes
-    Route::get('/', 'TeacherContoller@index')->name('teacher.dashboard');
+    Route::get('/', 'TeacherController@index')->name('teacher.dashboard');
 
     // Login routes
     Route::get('/login', 'Auth\TeacherLoginController@showLoginForm')->name('teacher.login');
