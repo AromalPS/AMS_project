@@ -36,6 +36,12 @@ Route::prefix('admin')->group(function (){
     // Register routes
     Route::get('/register', 'Auth\AdminRegisterController@showRegistrationForm')->name('admin.register');
     Route::post('/register', 'Auth\AdminRegisterController@register')->name('admin.register.submit');
+
+    // Reset routes
+    Route::post('/password/email', 'Auth\AdminForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
+    Route::post('/password/reset', 'Auth\AdminResetPasswordController@reset')->name('admin.password.update');
+    Route::get('/password/reset', 'Auth\AdminForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
+    Route::get('/password/reset/{token}', 'Auth\AdminResetPasswordController@showResetForm')->name('admin.password.reset');
 });
 
 Route::prefix('teacher')->group(function (){
@@ -52,4 +58,10 @@ Route::prefix('teacher')->group(function (){
     // Register routes
     Route::get('/register', 'Auth\TeacherRegisterController@showRegistrationForm')->name('teacher.register');
     Route::post('/register', 'Auth\TeacherRegisterController@register')->name('teacher.register.submit');
+
+    // Reset routes
+    Route::post('/password/email', 'Auth\TeacherForgotPasswordController@sendResetLinkEmail')->name('teacher.password.email');
+    Route::post('/password/reset', 'Auth\TeacherResetPasswordController@reset')->name('teacher.password.update');
+    Route::get('/password/reset', 'Auth\TeacherForgotPasswordController@showLinkRequestForm')->name('teacher.password.request');
+    Route::get('/password/reset/{token}', 'Auth\TeacherResetPasswordController@showResetForm')->name('teacher.password.reset');
 });
