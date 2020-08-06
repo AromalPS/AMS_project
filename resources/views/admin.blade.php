@@ -15,6 +15,18 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    <div>
+                        <a href="{{ route('register')}}"><button type="submit" class="btn btn-outline-dark btn-block">Register new Student</button></a>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="{{ route('teacher.register') }}"><button type="submit" class="btn btn-outline-dark btn-block">Register new Teacher</button></a>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="{{route('admin.register') }}"><button type="submit" class="btn btn-outline-dark btn-block">Register new Admin</button></a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ class TeacherRegisterController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('guest:teacher');
+        $this->middleware('auth:admin');
     }
 
     public function showRegistrationForm()
