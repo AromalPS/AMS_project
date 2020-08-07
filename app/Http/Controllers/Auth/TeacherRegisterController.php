@@ -41,9 +41,10 @@ class TeacherRegisterController extends Controller
                 'password' => Hash::make($request->password),
             ]);
 
-            // Log the teacher in
-            Auth::guard('teacher')->LoginUsingId($teacher->id);
-            return redirect()->route('teacher.dashboard');
+//            // Log the teacher in
+//            Auth::guard('teacher')->LoginUsingId($teacher->id);
+//            return redirect()->route('teacher.dashboard');
+            return redirect()->route('admin.dashboard');
         } catch (\Exception $e) {
             return redirect()->back()->withInput($request->only('name', 'email'));
         }
