@@ -46,7 +46,7 @@ Route::prefix('admin')->group(function (){
 
 Route::prefix('teacher')->group(function (){
     // Dashboard routes
-    Route::get('/', 'TeacherController@index')->name('teacher.dashboard');
+    Route::get('/', 'HomeController@index')->name('teacher.dashboard');
 
     // Login routes
     Route::get('/login', 'Auth\TeacherLoginController@showLoginForm')->name('teacher.login');
@@ -64,4 +64,7 @@ Route::prefix('teacher')->group(function (){
     Route::post('/password/reset', 'Auth\TeacherResetPasswordController@reset')->name('teacher.password.update');
     Route::get('/password/reset', 'Auth\TeacherForgotPasswordController@showLinkRequestForm')->name('teacher.password.request');
     Route::get('/password/reset/{token}', 'Auth\TeacherResetPasswordController@showResetForm')->name('teacher.password.reset');
+
+    //Class
+    Route::get('/class', 'HomeController@ShowClass')->name('teacher.student.class');
 });
