@@ -30,7 +30,10 @@ class HomeController extends Controller
 
     public function ShowClass(Request $request)
     {
-        $show = User::find($request->year);
-        dd($show);
+        $shows = User::all()->where('class','=',$request ->class)
+            ->where('year','=',$request -> year);
+        $class = $request->class;
+        $year = $request->year;
+        return view('class', compact('shows', 'class', 'year'));
     }
 }

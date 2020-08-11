@@ -32,6 +32,22 @@
                             </div>
                             <button type="submit" class="btn btn-primary">Search class</button>
                         </form>
+{{--                        <table class="table">--}}
+{{--                            <tr>--}}
+{{--                                <th>Name</th>--}}
+{{--                                <th>Email</th>--}}
+{{--                                <th>Class</th>--}}
+{{--                                <th>Year</th>--}}
+{{--                            </tr>--}}
+{{--                            @foreach($shows as $show)--}}
+{{--                            <tr>--}}
+{{--                                <td>{{ $show->name }}</td>--}}
+{{--                                <td>{{ $show->email }}</td>--}}
+{{--                                <td>{{ $show->class }}</td>--}}
+{{--                                <td>{{ $show->year }}</td>--}}
+{{--                            </tr>--}}
+{{--                            @endforeach--}}
+{{--                        </table>--}}
                     </div><br><br>
                     <div class="row">
                         <h2>All Students</h2>
@@ -39,8 +55,8 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>class</th>
-                                <th>year</th>
+                                <th>Class</th>
+                                <th>Year</th>
                             </tr>
                             @foreach($users as $user)
                             <tr>
