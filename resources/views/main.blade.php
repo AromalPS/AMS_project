@@ -13,7 +13,7 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    <title>Welcome to AMS</title>
+    <title>AMS | Welcome</title>
 </head>
 <body>
 <div class="container">

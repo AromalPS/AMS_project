@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+Class
+@endsection
+
 @section('content')
     <div class="container">
         <h3><b>Class: {{ $class }} | Year: {{ $year }}</b></h3>
