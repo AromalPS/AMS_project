@@ -17,10 +17,12 @@ Route::get('/', function () {
     return view('main');
 });
 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/user/logout', 'Auth\LoginController@userLogout')->name('user.logout');
+Route::post('/user/delete/{show}', 'HomeController@RemoveStudent')->name('user.delete.student');
 
 Route::prefix('admin')->group(function (){
     // Dashboard routes

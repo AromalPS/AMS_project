@@ -36,4 +36,10 @@ class HomeController extends Controller
         $year = $request->year;
         return view('class', compact('shows', 'class', 'year'));
     }
+
+    public function RemoveStudent(User $show)
+    {
+        $show->delete();
+        return back();
+    }
 }

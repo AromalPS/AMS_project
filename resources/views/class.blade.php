@@ -17,6 +17,12 @@ Class
                     <tr>
                         <td>{{ $show->name }}</td>
                         <td>{{ $show->email }}</td>
+                        <td>
+                            <form action="{{ route('user.delete.student' , $show->id) }}" method="post">
+                                @csrf
+                                <input type="submit" class="btn btn-danger" value="Remove student">
+                            </form>
+                        </td>
                     </tr>
                 @endforeach
             </table>
