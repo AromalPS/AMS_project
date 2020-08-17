@@ -16,6 +16,7 @@ class CreateAssignmentsTable extends Migration
         Schema::create('assignments', function (Blueprint $table) {
             $table->id();
             $table->string('Assigned by');
+//            $table->string('subject');
             $table->integer('Maximum mark');
             $table->timestamp('Assigned on', 0);
             $table->dateTime('last_date_of_submission');

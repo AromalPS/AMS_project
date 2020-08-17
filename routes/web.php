@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('main');
 });
 
+Route::get('/assignment', 'AssignmentController@index')->name('assignment');
+
 
 Auth::routes();
 
