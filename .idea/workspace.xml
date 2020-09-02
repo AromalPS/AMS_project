@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3052a76-9c2d-4ea5-a0db-3e0a94e43dbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_17_180635_add_subject_columns_to_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_17_181429_remove_columns_from_assignments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Assignment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Assignment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AssignmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AssignmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_17_164150_create_assignments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_17_164150_create_assignments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assignment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assignment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/class.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/class.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +159,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/auth/passwords" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../project/Muhammed-Salah.github.io" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -198,7 +202,9 @@
       <workItem from="1597495064457" duration="10000" />
       <workItem from="1597500552053" duration="5805000" />
       <workItem from="1597511484974" duration="69000" />
-      <workItem from="1597680672333" duration="6851000" />
+      <workItem from="1597680672333" duration="6916000" />
+      <workItem from="1598176245648" duration="606000" />
+      <workItem from="1599051330089" duration="4484000" />
     </task>
     <servers />
   </component>
@@ -225,6 +231,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596647840318" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598176271552">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598176271552" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1596650711211">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

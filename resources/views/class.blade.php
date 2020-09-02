@@ -20,7 +20,7 @@ Class
                         <td>
                             <form action="{{ route('user.delete.student' , $show->id) }}" method="post">
                                 @csrf
-                                <input type="submit" class="btn btn-danger" value="Remove student">
+                                <input type="submit" class="btn btn-danger" value="Remove_student">
                             </form>
                         </td>
                     </tr>

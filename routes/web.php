@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/assignment', 'AssignmentController@index')->name('assignment');
+Route::post('/assignment/published', 'AssignmentController@addassignment')->name('assignment.publish');
 
 
 Auth::routes();

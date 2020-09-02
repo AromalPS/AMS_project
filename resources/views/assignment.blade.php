@@ -6,10 +6,15 @@
 
 @section('content')
     <div class="container">
-    <form action="" method="">
+    <form action="{{ route('assignment.publish') }}" method="post">
+        @csrf
         <div class="form-group">
-            <label for="assigned by">Assigned by</label>
+            <label for="assigned_by">Assigned by</label>
             <input type="text" class="form-control" name="assigned_by" id="assigned_by" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" required>
         </div>
         <div class="form-group">
             <label for="mark">Maximum mark</label>
@@ -20,7 +25,7 @@
             <input type="datetime-local" class="form-control" name="last_day" id="last_day" required>
         </div>
         <div class="form-group">
-            <label for="assigned_class">assigned_class</label>
+            <label for="assigned_class">Assigned Class</label>
             <div>
                 <select id="assigned_class" type="text" class="form-control @error('assigned_class') is-invalid @enderror" name="assigned_class" value="{{ old('assigned_class') }}" required autocomplete="assigned_class">
                     <option value="CE" selected>CE</option>
@@ -31,7 +36,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="assigned_year" >assigned_year</label>
+            <label for="assigned_year" >Assigned Year</label>
 
             <div>
                 <select id="assigned_year" type="text" class="form-control" name="assigned_year" value="{{ old('assigned_year') }}" required autocomplete="assigned_year">
