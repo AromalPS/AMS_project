@@ -24,6 +24,6 @@ class AssignmentController extends Controller
             'subject' => $request->subject,
         ]);
 //        dd($request);
-//        return view('teacher');
+        return view('teacher');
     }
 }
